@@ -1,0 +1,40 @@
+/* Utilizando seletor simples (nome do tag html) para formatar todos os parágrafos no centro, com a cor vermelha */
+p {
+  text-align: center;
+  color: deeppink;
+}
+
+/*  Formatar h2 a direita */
+h2 {
+  text-align: right;
+}
+
+/* Utilizando seletor ID (localiza o componente pelo identificador ÚNICO) - seletor é #NomeID */
+#parag01,
+#parag02 {
+  color: darkcyan;
+  text-align: right;
+}
+
+/* Utilizando seletor por Classe (localiza um grupo de componentes pelo nome da classe) - seletor é .NomeClasse */
+.leftblue {
+  text-align: left;
+  color: rgb(114, 192, 255);
+}
+
+/* Especificando o seletor de classe, junto com o seletor simples. Mesmo h2 tendo a classe "center", por informar que deseja especificamente os p com classe center, os h2 com center não são usados */
+p.center {
+  text-align: center;
+}
+
+.roxo {
+  color: blueviolet;
+}
+
+.tl200 {
+  font-size: 200%;
+}
+
+.gold {
+  color: gold;
+}
