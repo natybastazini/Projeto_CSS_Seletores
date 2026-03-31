@@ -1,40 +1,120 @@
+/* Reiniciar os valores dos componentes para um valor conhecido - Normalmente aplica-se RESET */
+*,*::after,*::before{
+  /* Especifica que a largura do componente é total */
+  box-sizing: border-box;
+  /* Limpa as formatações de margem e borda */
+  padding: 0;
+  margin: 0;
+}
+
+/* Formatação universal - Todo o body */
+body{
+  background-color: azure;
+}
+
 /* Utilizando seletor simples (nome do tag html) para formatar todos os parágrafos no centro, com a cor vermelha */
-p {
+p{
   text-align: center;
   color: deeppink;
 }
 
 /*  Formatar h2 a direita */
-h2 {
+h2{
   text-align: right;
 }
 
 /* Utilizando seletor ID (localiza o componente pelo identificador ÚNICO) - seletor é #NomeID */
-#parag01,
-#parag02 {
+#parag01,#parag02{
   color: darkcyan;
   text-align: right;
 }
 
 /* Utilizando seletor por Classe (localiza um grupo de componentes pelo nome da classe) - seletor é .NomeClasse */
-.leftblue {
+.leftblue{
   text-align: left;
   color: rgb(114, 192, 255);
 }
 
 /* Especificando o seletor de classe, junto com o seletor simples. Mesmo h2 tendo a classe "center", por informar que deseja especificamente os p com classe center, os h2 com center não são usados */
-p.center {
+p.center{
   text-align: center;
 }
 
-.roxo {
+.roxo{
   color: blueviolet;
 }
 
-.tl200 {
+.tl200{
   font-size: 200%;
 }
 
-.gold {
+.gold{
   color: gold;
+}
+
+/* Agrupando seletores para aplicar a mesma formatação OR/OU */
+/* h1{
+    text-align: right;
+}
+
+h2{
+    text-align: right;
+} */
+
+h1,h2{
+  text-align: right;
+}
+
+/* Realizando a seleção do elemento html baseado no seu atributo - Seletor Atributo */
+a[target]{
+  line-height: 12px;
+  background-color: aquamarine;
+}
+
+a[target="_blank"]{
+  background-color: hotpink;
+}
+
+.alert{
+  color: orangered;
+  font-weight: bold;
+  font-size: large;
+}
+
+/* Utilizando seletor filho de outro elemento */
+div>p{
+  color: chartreuse;
+  font-size: 1.5rem;
+}
+
+/* Utilizando para próximo irmão direto de div */
+div+h3{
+  color: mediumpurple;
+}
+
+/* Utilizando seletores aninhados */
+/* .box {
+  background-color: yellow;
+} */
+
+/* .box>a{
+    background-color: yellow;
+    color: black;
+} */
+
+/* .box>a:hover{
+  background-color: black;
+  color: white;
+} */
+
+.box{
+    background-color: yellow;
+    & > a {
+        background-color: yellow;
+        color: black;
+        &:hover {
+            background-color: black;
+            color: white;
+    }
+  }
 }

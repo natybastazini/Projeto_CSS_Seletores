@@ -37,5 +37,39 @@
     <p class="center gold roxo tl200">
       Com classe center, e formatação de cor para roxo.
     </p>
+
+    <h2>Utilizando seletor por atributo</h2>
+    <a href="https://www.google.com/" target="">Google</a><br />
+    <a href="https://www.sp.senai.br/" target="_blank">SENAI</a>
+
+    <h2>Utilizando SPAN para formatar uma parte da frase</h2>
+    <p>
+      Texto que terá seu conteúdo
+      <span class="alert">
+        parcialmente formatado com o span, neste trecho
+      </span>
+      . Depois daqui o txto volta ao seu formato convencional!
+    </p>
+
+    <h2>Formatar parágrafos que sejam filhos de uma div</h2>
+    <div>
+      <p>
+        Este parágrafo será formatado com o seletor div filho de p (div > p)
+      </p>
+      <section>
+        <p>Este não será formatado, pois é filho de section, e não de div</p>
+      </section>
+      <p>
+        Este parágrafo será formatado com o seletor div filho de p (div > p)
+      </p>
+    </div>
+    <h3>Título 3 após a div</h3>
+    <h3>Títudo 3 após a div, mas antes deste tem outro h3</h3>
+
+    <h2>Aninhar seletores</h2>
+    <div class="box">
+      <a href="https://www.google.com/" target="">Google</a><br />
+      <a href="https://www.sp.senai.br/" target="_blank">SENAI</a>
+    </div>
   </body>
 </html>
