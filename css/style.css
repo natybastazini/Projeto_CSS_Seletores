@@ -154,3 +154,20 @@ nav>a:hover{
 .oculta:hover>p{
   display: block;
 }
+
+/* Utilizando o seletor de pseudo::elemento para formatar a primeira linha do parágrafo */
+.formatpseudoelement::first-line{
+  color: red;
+  background-color: aquamarine;
+}
+/* Formatar o primeiro caractere de p */
+.formatpseudoelement::first-letter{
+  font-size: xx-large;
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
+}
+/* Utilizando pseudo::elemento para "habilitar" o marcador de texto */
+::selection{
+  color: deeppink;
+  background-color: lightgreen;
+}
