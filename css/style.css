@@ -118,3 +118,39 @@ div+h3{
     }
   }
 }
+
+/* Selecionado e formatando as cores de classes dos elementos HTML */
+
+/* Link selecionado */
+nav>a:link{
+  color: greenyellow;
+}
+
+/* Link visitado */
+nav>a:visited{
+  color: blue;
+}
+
+/* Link ativo */
+nav>a:active{
+  color: black;
+}
+
+/* Link mouse sobre */
+nav>a:hover{
+  color: palevioletred;
+  background-color: blue;
+}
+
+/* Apresentando elementos "ocultos" utilizando a pseudo:classe */
+/* Esconde elemento p da div oculta */
+.oculta>p{
+  display: none;
+  color: red;
+  background-color: yellow;
+  text-align: 1.2rem;
+}
+/* Exibe elemento p */
+.oculta:hover>p{
+  display: block;
+}
